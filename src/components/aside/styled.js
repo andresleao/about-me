@@ -40,6 +40,13 @@ export const TitleContainer = styled.div`
   background-color: ${(props) => props.theme.primary};
   border-radius: 0.5rem;
   padding: 0.4rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.69);
+  }
 `;
 
 export const Title = styled.h3`
@@ -55,6 +62,10 @@ export const ContentContainer = styled.ul`
   background-color: ${(props) => props.theme.primary};
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
+
+  &:hover {
+    outline: 2px solid ${(props) => props.default};
+  }
 `;
 
 export const Item = styled.li`
@@ -62,6 +73,12 @@ export const Item = styled.li`
   font-size: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
 `;
 
 export const Paragraph = styled.p`

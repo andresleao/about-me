@@ -13,6 +13,10 @@ export const Content = styled.div`
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.69);
   margin-bottom: 1.9rem;
   padding: 1rem;
+
+  &:hover {
+    outline: 2px solid ${(props) => props.default};
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -21,6 +25,12 @@ export const TitleContainer = styled.div`
   padding: 0.4rem 0;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.69);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 export const Title = styled.h2`
