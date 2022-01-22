@@ -38,7 +38,10 @@ const Aside = ({ theme, setTheme }) => {
           andrefelipesl123@gmail.com
         </S.Item>
         <S.Item>
-          <S.ExternalLink>
+          <S.ExternalLink
+            href=" https://www.linkedin.com/in/andr%C3%A9-felipe-bezerra-de-souza-le%C3%A3o-119b6b193/"
+            target="_blank"
+          >
             <S.LogoLinkedin size={25} style={{ marginRight: '.5rem' }} />
             linkedin.com/in/andr%C3%A9-felipe-bezerra-de-souza-le%C3%A3o-119b6b193/
           </S.ExternalLink>
@@ -46,7 +49,7 @@ const Aside = ({ theme, setTheme }) => {
         <S.Item>
           <S.ExternalLink href="https://github.com/andresleao" target="_blank">
             <S.LogoGithub size={25} style={{ marginRight: '.5rem' }} />
-            https://github.com/andresleao
+            github.com/andresleao
           </S.ExternalLink>
         </S.Item>
       </S.ContentContainer>
