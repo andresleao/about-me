@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import dev from '../../assets/dev.jpg';
+import marcozero from '../../assets/marcozero.jpg';
 
 export const MainHeader = styled.header`
   grid-area: MH;
@@ -8,8 +9,12 @@ export const MainHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.69);
+  /* background-image: url(${marcozero}), */
+  /* background-size: 90rem;
+  background-repeat: no-repeat;
+  background-position: center; */
   z-index: 1;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.69);
 `;
 
 export const PhotoContainer = styled.div`

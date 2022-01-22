@@ -9,8 +9,33 @@ export const LeftColumn = styled.div`
   border-right: solid 7px ${(props) => props.theme.primary};
 `;
 
-export const TitleContainer = styled.div`
+export const ThemeButton = styled.button`
   margin-top: 20vh;
+  margin-bottom: 2.2rem;
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: ${(props) => props.theme.primary};
+  background-color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secondary};
+    transform: translateY(-4px);
+    outline: 2px solid ${(props) => props.theme.secondary};
+    box-shadow: 5px 15px 15px 0px rgba(0, 0, 0, 0.69);
+  }
+
+  &:active {
+    background-color: ${(props) => props.theme.primaryLight};
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.69);
+  }
+`;
+
+export const TitleContainer = styled.div`
   display: flex;
   background-color: ${(props) => props.theme.primary};
   border-radius: 0.5rem;
@@ -39,6 +64,11 @@ export const Item = styled.li`
   padding-bottom: 0.8rem;
 `;
 
+export const Paragraph = styled.p`
+  color: ${(props) => props.theme.secondary};
+  font-size: 0.9rem;
+`;
+
 export const LogoLinkedin = styled(IoLogoLinkedin)`
   min-width: 25px;
 `;
@@ -59,5 +89,6 @@ export const ExternalLink = styled.a`
     transform: translateY(-2px);
     padding: 0.5rem 0;
     border-radius: 0.5rem;
+    color: #f0f008;
   }
 `;

@@ -3,11 +3,11 @@ import Header from '../header/Header';
 import Aside from '../aside/Aside';
 import Content from '../content/Content';
 
-function Layout() {
+function Layout({ theme, setTheme }) {
   return (
     <Grid>
       <Header />
-      <Aside />
+      <Aside theme={theme} setTheme={setTheme} />
       <Content />
     </Grid>
   );

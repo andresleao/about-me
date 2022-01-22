@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   grid-area: CT;
   background-color: ${(props) => props.theme.tertiary};
-  margin-top: 15vh;
+  margin-top: 14vh;
   padding: 2.5rem 4.5rem;
 `;
 
 export const Content = styled.div`
-  background-color: ${(props) => props.theme.secondary};
+  background-color: ${(props) => props.theme.mainContent};
   border-radius: 0.5rem;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.69);
   margin-bottom: 1.9rem;
@@ -32,12 +32,24 @@ export const Title = styled.h2`
 export const Paragraph = styled.p`
   margin-top: 0.8rem;
   line-height: 1.4;
+  color: ${(props) => props.theme.default};
 `;
 
-export const CoursesList = styled.ul`
+export const List = styled.ul`
   padding: 0 1.7rem;
 `;
 
 export const Course = styled.li`
   margin-bottom: 1rem;
+  margin-top: 0.8rem;
+  line-height: 1.4;
+  color: ${(props) => props.theme.default};
 `;
+
+export const Subtitle = styled.h4`
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: ${(props) => props.theme.default};
+`;
+
+export const Activities = styled(Course)``;
