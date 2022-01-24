@@ -15,7 +15,7 @@ export const Content = styled.div`
   padding: 1rem;
 
   &:hover {
-    outline: 2px solid ${(props) => props.default};
+    outline: 2px solid ${(props) => props.theme.default};
   }
 `;
 
